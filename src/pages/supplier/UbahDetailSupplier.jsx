@@ -83,7 +83,7 @@ const UbahDetailSupplier = () => {
     <Layout>
       {loading ? (
         <div className="flex justify-center items-center h-screen">
-          <Spinner label="Tunggu sebentar..." />
+          <Spinner label="Tapi tunggu dulu" />
         </div>
       ) : (
         <section
