@@ -52,10 +52,10 @@ const DetailSupplier = () => {
               <h4 className="text-lg md:text-xl lg:text-2xl mt-2">
                 {getSupplierById.no_hp}
               </h4>
-              <p className="my-4 text-sm md:text-base lg:text-lg">
+              <p className="my-4 text-sm md:text-base lg:text-lg break-words">
                 {getSupplierById.alamat}
               </p>
-              <p className="mb-4 text-sm md:text-base lg:text-lg">
+              <p className="mb-4 text-sm md:text-base lg:text-lg break-words">
                 {getSupplierById.email}
               </p>
               <Link

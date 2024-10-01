@@ -157,6 +157,8 @@ export default function TablePaginate({ allBarang, filterJenis }) {
                       </span>
                     </Tooltip>
                   </div>
+                ) : columnKey === "nama_barang" ? (
+                  truncateText(getKeyValue(item, columnKey), 10)
                 ) : columnKey === "harga" ? (
                   formatRupiah(getKeyValue(item, columnKey))
                 ) : columnKey === "jenis_barang" ? (

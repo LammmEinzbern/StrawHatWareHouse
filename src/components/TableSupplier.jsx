@@ -155,10 +155,10 @@ export default function TableSupplier({ allSupplier }) {
                     {getKeyValue(item, columnKey)}
                   </span>
                 ) : columnKey === "nama_supplier" ? (
-                  <span className="capitalize">
-                    {getKeyValue(item, columnKey)}
-                  </span>
+                  truncateText(getKeyValue(item, columnKey), 10)
                 ) : columnKey === "alamat" ? (
+                  truncateText(getKeyValue(item, columnKey), 10)
+                ) : columnKey === "email" ? (
                   truncateText(getKeyValue(item, columnKey), 10)
                 ) : columnKey === "logo_supplier" ? (
                   <img
